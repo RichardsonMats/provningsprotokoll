@@ -2,18 +2,33 @@
 
 Obs, denna kod har utvecklats med stöd av generativ AI.
 
+## Installation
+
+Installera Node.js 18 eller senare. Projektet använder endast Node.js inbyggda
+funktioner och har inga externa npm-paket.
+
+Klona repot, byt till projektmappen och installera projektets npm-konfiguration:
+
+```powershell
+npm install
+```
+
+Internetanslutning krävs när programmet körs eftersom produktdata hämtas från
+Systembolaget. Produktbilder och webbfonter hämtas också från Systembolagets
+webbplats.
+
 Skapa ett utskriftsklart protokoll genom att ange Systembolagets artikelnummer.
 Artikelnumret finns på produktsidan och på hyllornas prislappar; både korta och fullständiga
 nummer accepteras.
 
 ```powershell
-node generateProtocol.js 1612 3341215 3498803
+npm run generate -- 1612 3341215 3498803
 ```
 
 En återanvändbar .txt-fil `articles.txt` med ett artikelnummer per rad kan också användas som input:
 
 ```powershell
-node generateProtocol.js --input articles.txt
+npm run generate -- --input articles.txt
 ```
 
 Tomma rader ignoreras. Text efter `#` behandlas som kommentarer, så artikelnamn kan anges för läsbarhet: `180115 # Finn hazy IPA`.
@@ -39,5 +54,5 @@ rubrik och produkttext.
 Valfri egen utdatafil:
 
 ```powershell
-node generateProtocol.js --config min-layout.json --output olprovning.html 1612 3341215
+npm run generate -- --config min-layout.json --output olprovning.html 1612 3341215
 ```
