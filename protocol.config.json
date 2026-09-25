@@ -1,0 +1,22 @@
+{
+  "$schema": "./protocol.config.schema.json",
+  "page": { "size": "A4", "orientation": "landscape", "margin": "5mm" },
+  "colors": { "page": "#fffdf8", "text": "#25342a", "accent": "#355f43", "tableBorder": "#bacfbe", "rowDivider": "#b4c9b9", "columnDivider": "#b6cabb", "headerBackground": "#dde9dc", "headerText": "#193525", "noteLines": "#dde9dd" },
+  "header": { "fontFamily": "bolagetMediumCondensed, Arial Narrow, sans-serif", "fontSize": "10pt", "fontWeight": "700", "italic": false },
+  "body": { "fontFamily": "interVariable, Arial, sans-serif", "fontSize": "8.5pt", "italic": false },
+  "cell": { "padding": "1.5mm" },
+  "image": { "verticalPadding": "1mm" },
+  "rowHeight": "16mm",
+  "columns": [
+    { "key": "image", "label": " ", "width": "6%", "bold": false, "italic": false }, 
+    { "key": "item", "label": "Namn", "width": "10%", "bold": true, "italic": false },
+    { "key": "country", "label": "Land", "width": "7%", "bold": false, "italic": false }, 
+    { "key": "category", "label": "Kategori", "width": "9%", "bold": false, "italic": false },
+    { "key": "abv", "label": "Alk. %", "width": "5%", "bold": false, "italic": false },
+    { "key": "bitterness", "label": "Beska", "width": "6%", "bold": false, "italic": false },
+    { "key": "body", "label": "Fyllighet", "width": "6%", "bold": false, "italic": false },
+    { "key": "sweetness", "label": "Sötma", "width": "6%", "bold": false, "italic": false },
+    { "key": "taste", "label": "Smakbeskrivning", "width": "20%", "bold": false, "italic": true }, 
+    { "key": "comments", "label": "Egna anteckningar", "width": "25%", "bold": false, "italic": false }
+  ]
+}

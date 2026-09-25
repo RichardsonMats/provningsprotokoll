@@ -1,0 +1,20 @@
+# One Systembolaget article number per line.
+3074203 # Qvänum Mat&Malt MCBrian
+3156915 # Nyköping Brewing Kilt Bill
+8804701 # Omnipollo Levon XV
+3280735 # Beerbliotek x O/O Sabotage Black IPA
+3801815 # Revsunds Brewery Badass black IPA
+3105215 # Brewski Night Knocker Black IPA
+3403115 # Brewski Triple Berry Pie
+3110203 # Jämtlands Baltic Imperial Stout
+3250615 # Norrlandsbryggarna Black Oyster Stout
+3058115 # Oppigårds Thurbo Stout
+3498803 # Jämtlands Coffee Stout
+3550403 # Nääs Gårdsbryggeri STORSINT Barley Wine
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Provningsprotokoll configuration",
+  "type": "object",
+  "properties": {
+    "colors": {
+      "type": "object",
+      "properties": {
+        "page": { "$ref": "#/$defs/color" },
+        "text": { "$ref": "#/$defs/color" },
+        "accent": { "$ref": "#/$defs/color" },
+        "tableBorder": { "$ref": "#/$defs/color" },
+        "rowDivider": { "$ref": "#/$defs/color" },
+        "columnDivider": { "$ref": "#/$defs/color" },
+        "headerBackground": { "$ref": "#/$defs/color" },
+        "headerText": { "$ref": "#/$defs/color" },
+        "noteLines": { "$ref": "#/$defs/color" }
+      }
+    },
+    "image": {
+      "type": "object",
+      "properties": {
+        "verticalPadding": { "type": "string", "description": "Top and bottom padding inside image cells, for example 2.5mm." }
+      },
+      "required": ["verticalPadding"]
+    },
+    "columns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": { "enum": ["image", "brand", "item", "country", "category", "abv", "bitterness", "body", "sweetness", "taste", "comments"] },
+          "label": { "type": "string", "description": "Text displayed in the table header." },
+          "width": { "type": "string", "description": "CSS width, for example 12% or 25mm." },
+          "bold": { "type": "boolean", "default": false, "description": "Render this column's header and item text in bold." },
+          "italic": { "type": "boolean", "default": false, "description": "Render this column's header and item text in italic." }
+        },
+        "required": ["key", "width"]
+      }
+    }
+  },
+  "$defs": {
+    "color": {
+      "type": "string",
+      "format": "color-hex",
+      "pattern": "^#[0-9a-fA-F]{6}$",
+      "description": "Hex color. VS Code displays a color swatch and picker for this value."
+    }
+  }
+}
