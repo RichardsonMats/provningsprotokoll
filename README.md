@@ -4,8 +4,21 @@ Obs, denna kod har utvecklats med stöd av generativ AI.
 
 ## Installation
 
-Installera Node.js 18 eller senare. Projektet använder endast Node.js inbyggda
-funktioner och har inga externa npm-paket.
+### Installera Node.js
+
+Installera Node.js 18 eller senare från [nodejs.org](https://nodejs.org/). Välj
+LTS-versionen för Windows och behåll standardinställningen som lägger till
+Node.js i `PATH`. `npm` installeras samtidigt med Node.js.
+
+Stäng och öppna PowerShell eller VS Code-terminalen igen efter installationen.
+Kontrollera att både Node.js och npm är tillgängliga:
+
+```powershell
+node --version
+npm --version
+```
+
+Projektet använder endast Node.js inbyggda funktioner och har inga externa npm-paket.
 
 Klona repot, byt till projektmappen och installera projektets npm-konfiguration:
 
